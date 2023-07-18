@@ -1,0 +1,13 @@
+bug: 4 mb page wouldn't be in memory. Weird numbers.
+time to fix: ~1 hour
+notes: Had to modify cr4 to enable this 
+
+bug: the kernel wouldn't boot
+time to fix: 3 hours 
+notes: Had to redesign a lot of our structs and changed to use a union like the IDT union struct.
+    Our guess is the values for the paging were very wonky before making this change.
+
+bug: page fault wouldn't trigger for test case
+time to fix: 30 minutes
+notes: Had to actually dereference pointer instead of just initializing
+
